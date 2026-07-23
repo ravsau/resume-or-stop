@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "saurav-claude-tools",
+  "description": "Practical Claude Code workflows by Saurav Sharma.",
+  "owner": {
+    "name": "Saurav Sharma"
+  },
+  "plugins": [
+    {
+      "name": "session-tools",
+      "displayName": "Session Tools",
+      "source": "./plugins/session-tools",
+      "description": "Know when the current Claude Code session should continue, hand off, or stop.",
+      "author": {
+        "name": "Saurav Sharma"
+      },
+      "homepage": "https://github.com/ravsau/resume-or-stop",
+      "repository": "https://github.com/ravsau/resume-or-stop",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "sessions",
+        "workflow",
+        "productivity"
+      ]
+    }
+  ]
+}
