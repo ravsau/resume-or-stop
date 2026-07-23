@@ -12,7 +12,27 @@ active processes, safety, and handoff state. It returns one verdict:
 It judges the current session only. It does not turn the question into another
 backlog or priority review.
 
-## Install as a Claude Code plugin
+## Install `/resume-or-stop`
+
+For the short command across all your projects:
+
+```bash
+git clone https://github.com/ravsau/resume-or-stop.git
+cd resume-or-stop
+./install.sh
+```
+
+Then use:
+
+```text
+/resume-or-stop
+```
+
+The installer links the skill into your personal `~/.claude/skills/` directory
+without overwriting an existing skill. Start a new Claude Code session if the
+command does not appear immediately.
+
+## Install from the plugin marketplace
 
 This repository follows Anthropic's current plugin and Agent Skills format.
 Inside Claude Code, run:
@@ -29,24 +49,8 @@ Then use:
 /session-tools:resume-or-stop
 ```
 
-Plugin skills are namespaced by design. This prevents collisions with other
-installed plugins.
-
-## Keep the shorter command
-
-For a personal installation with the exact `/resume-or-stop` name:
-
-```bash
-git clone https://github.com/ravsau/resume-or-stop.git ~/resume-or-stop
-mkdir -p ~/.claude/skills
-ln -s ~/resume-or-stop/plugins/session-tools/skills/resume-or-stop ~/.claude/skills/resume-or-stop
-```
-
-Then run:
-
-```text
-/resume-or-stop
-```
+Anthropic requires plugin skills to use a `plugin-name:skill-name` namespace.
+The personal installer above is the supported path for the bare command.
 
 ## What it checks
 

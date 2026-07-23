@@ -42,10 +42,16 @@ Load the local plugin:
 claude --plugin-dir ./plugins/session-tools
 ```
 
-Then run:
+Then run the namespaced plugin command:
 
 ```text
 /session-tools:resume-or-stop
+```
+
+To test the bare personal command instead:
+
+```bash
+CLAUDE_CONFIG_DIR="$(mktemp -d)" ./install.sh
 ```
 
 ## Design rules
