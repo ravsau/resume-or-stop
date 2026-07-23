@@ -74,6 +74,12 @@ Official references:
 - [Extend Claude with skills](https://code.claude.com/docs/en/slash-commands)
 - [Distribute plugin marketplaces](https://code.claude.com/docs/en/plugin-marketplaces)
 
+## Contributing
+
+Bug reports, unclear verdicts, documentation improvements, and new calibration
+examples are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a
+pull request.
+
 ## License
 
 MIT
