@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "session-tools",
   "displayName": "Session Tools",
-  "version": "1.0.0",
-  "description": "Know when a Claude Code session should continue, hand off, or stop.",
+  "version": "1.1.0",
+  "description": "Review the current Claude Code conversation for loose threads and decide whether to resume or stop.",
   "author": {
     "name": "Saurav Sharma",
     "url": "https://github.com/ravsau"

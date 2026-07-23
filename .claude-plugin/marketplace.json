@@ -10,7 +10,7 @@
       "name": "session-tools",
       "displayName": "Session Tools",
       "source": "./plugins/session-tools",
-      "description": "Know when the current Claude Code session should continue, hand off, or stop.",
+      "description": "Find loose threads in the current Claude Code conversation and decide whether to resume or stop.",
       "author": {
         "name": "Saurav Sharma"
       },

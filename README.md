@@ -1,16 +1,17 @@
 # Resume or Stop
 
-Several Claude Code sessions are open. Which ones are actually done?
+I keep several Claude Code sessions open, sometimes more than one for the same
+project. Eventually I cannot scroll back far enough to remember what happened or
+whether anything is still unfinished.
 
-`resume-or-stop` checks the current session's goal, completed work, validation,
-active processes, safety, and handoff state. It returns one verdict:
+`/resume-or-stop` asks the current session to look back through its own
+conversation, surface any loose threads, and give one answer:
 
-- `STOP`: close the session
-- `RESUME`: keep working in this session
-- `HANDOFF`: close now and resume when a specific external gate clears
+- `STOP`: it is safe to close, with any later follow-ups listed
+- `RESUME`: something here is still worth continuing now
 
-It judges the current session only. It does not turn the question into another
-backlog or priority review.
+That is it. It does not scan your backlog, inspect your other sessions, or invent
+more work.
 
 ## Install `/resume-or-stop`
 
@@ -51,14 +52,6 @@ Then use:
 
 Anthropic requires plugin skills to use a `plugin-name:skill-name` namespace.
 The personal installer above is the supported path for the bare command.
-
-## What it checks
-
-1. Was the original request completed?
-2. Was the work verified?
-3. Is the current state safe to leave?
-4. Does remaining work have an owner?
-5. Is anything genuinely urgent enough to keep this session open?
 
 ## Develop and validate
 

@@ -5,9 +5,9 @@ Thanks for helping improve `resume-or-stop`.
 ## Useful contributions
 
 - Report a session where the verdict was wrong or unclear.
-- Add calibration examples for STOP, RESUME, or HANDOFF.
+- Add examples for STOP or RESUME.
 - Improve installation and usage documentation.
-- Tighten the skill without turning it into a backlog or project-management tool.
+- Help the skill catch useful loose threads without inventing more work.
 
 For a documentation typo, feel free to open a pull request directly. For a behavior
 change, [open an issue](https://github.com/ravsau/resume-or-stop/issues) first and
@@ -58,12 +58,12 @@ CLAUDE_CONFIG_DIR="$(mktemp -d)" ./install.sh
 
 Please preserve these behaviors:
 
-- Judge only the current session.
-- Return exactly one verdict: STOP, RESUME, or HANDOFF.
-- Base the verdict on current-session evidence.
-- Use RESUME only when required work can continue now.
-- Use HANDOFF when a named external or human gate remains.
-- Do not keep a session open for optional polish or unrelated work.
+- Review only the current conversation.
+- Surface unfinished work and ideas worth following up.
+- Return exactly one verdict: STOP or RESUME.
+- Let STOP include follow-ups that can wait.
+- Use RESUME only when continuing here would preserve useful context.
+- Do not scan other sessions or turn this into backlog management.
 
 ## Pull request checklist
 
